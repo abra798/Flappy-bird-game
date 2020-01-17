@@ -1,0 +1,102 @@
+body
+{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background:linear-gradient(90deg, lightblue,rgb(66, 152, 185));
+    background-size: 400% 400%;
+    animation:backgroundgradient 5s ease infinite ;
+
+
+}
+
+
+@keyframes backgroundgradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+
+}
+
+
+#container
+{
+    position: relative;
+    height: 400px;
+    width: 90%;
+    border: 2px solid red;
+    background-color: 	aliceblue;
+    margin-top: 60px;
+    margin-left: 4%;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 3px 2px 4px whitesmoke;
+    border-radius: 35px;
+}
+
+
+#bird
+{
+    position: absolute;
+    background: url("../src/bird.png");
+    height: 42px;
+    width: 45px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 20%;
+    left:15%;
+
+}
+
+.pole 
+{
+    position: absolute;
+    height: 130px;
+    width: 50px;
+    background-color:red;
+    right: -50px;
+}
+
+#pole_1
+{
+    top: 0;
+}
+
+#pole_2
+{
+    bottom: 0;
+}
+
+#score_div
+{
+    text-align: center;
+    font-size: 40px;
+    color: orangered;
+}
+
+#restart_btn
+{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin-top: 180px;
+    margin-left: 650px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #1F1E24;
+    color: blue;
+    font-size: 35px;
+    border: 2px solid red;
+    cursor: pointer;
+    display: none;
+    
+}
